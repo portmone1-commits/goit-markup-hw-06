@@ -1096,7 +1096,7 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
     color: #ffffff;
     background-color: transparent;
 
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid #ffffff;
 
     border-radius: 4px;
 
@@ -1106,12 +1106,13 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
 }
 
 .subscribe-input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-
+    color: #ffffff;
+    line-height: 2;
 }
 
+
 .subscribe-input:focus {
-    border-color: #31d0aa;
+    border-color: #ffffff;
 }
 
 .subscribe-btn {
