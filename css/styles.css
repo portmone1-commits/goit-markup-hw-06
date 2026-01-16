@@ -284,8 +284,8 @@ textarea {
     }
 
     .address-link {
-        padding-top: 16px;
-        padding-bottom: 16px;
+        padding-top: 0;
+        padding-bottom: 0;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
@@ -314,6 +314,10 @@ textarea {
 @media screen and (min-width: 768px) and (max-width: 1157px) {
     .logo {
         margin-right: 120px;
+    }
+
+    .header-container {
+        min-height: 72px;
     }
 }
 
