@@ -1308,8 +1308,6 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
 
 /* ========= MODAL ========= */
 
-/* ========= MODAL (mobile-first) ========= */
-
 .backdrop {
     position: fixed;
     inset: 0;
@@ -1558,16 +1556,29 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
 
     fill: transparent;
     flex-shrink: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox-icon svg {
+
+    width: 10px;
+    height: 8px;
+    display: block;
+
     opacity: 0;
+    fill: #ffffff;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* checked state */
 .modal-checkbox-input:checked+.modal-checkbox-icon {
     background-color: #404bbf;
-    border: none;
+    border-color: #404bbf;
+
     fill: #ffffff;
 }
 
@@ -1585,7 +1596,7 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
 
 .modal-checkbox-input:checked+.modal-checkbox-icon svg {
     opacity: 1;
-    fill: #ffffff;
+
 }
 
 
